@@ -79,7 +79,7 @@ def tweet():
     item = random.choice(item['items'])
     save_image(item['img_url'])
 
-    tags = [' #art', ' #arte', ' #modernart', ' #artemoderna'
+    tags = [' #art', ' #arte', ' #modernart', ' #artemoderna',
             ' #mamsp', ' #museu', ' #museum']
 
     msg = '{} - {}; {}.'.format(item['title'], item['artist'], item['year'])
