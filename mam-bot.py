@@ -30,10 +30,7 @@ def update_collection():
 
     pages_to_search = math.ceil(total_items / items_per_page)
 
-    item_model = open(COLLECTION_FILE).read()
-    item_model = json.loads(item_model)
-    item_model = item_model['item_model']
-    collection = json.loads(open(COLLECTION_FILE).read())
+    collection = {}
     collection['collection_size'] = 0
     collection['items'] = []
 
