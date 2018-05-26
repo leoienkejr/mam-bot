@@ -92,4 +92,4 @@ if __name__ == '__main__':
     while True:
         update_collection()
         tweet()
-        time.sleep(int(random.uniform(1.0, 6.0) * 3600))
+        time.sleep(int(random.uniform(0.2, 4.0) * 3600))
