@@ -1,0 +1,7 @@
+﻿*.sublime-project
+*.sublime-workspace
+*.pyc
+*.json
+*.bat
+*.png
+*.jpg
