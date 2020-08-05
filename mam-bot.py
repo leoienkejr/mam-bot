@@ -86,6 +86,7 @@ def tweet():
 
 
 if __name__ == '__main__':
+    update_collection()
     tweets_since_last_update = 0
     while True:
         if tweets_since_last_update < 24:
