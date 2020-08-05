@@ -86,7 +86,14 @@ def tweet():
 
 
 if __name__ == '__main__':
+    tweets_since_last_update = 0
     while True:
-        update_collection()
-        tweet()
+        if tweets_since_last_update < 24:
+            tweet()
+            tweets_since_last_update += 1
+        else:
+            tweets_since_last_update = 0
+            update_collection()
+            tweet()
+            tweets_since_last_update += 1
         time.sleep(3600)
