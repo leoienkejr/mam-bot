@@ -89,7 +89,7 @@ if __name__ == '__main__':
     update_collection()
     tweets_since_last_update = 0
     while True:
-        if tweets_since_last_update < 24:
+        if tweets_since_last_update < 72:
             tweet()
             tweets_since_last_update += 1
         else:
