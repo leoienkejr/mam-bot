@@ -79,11 +79,8 @@ def tweet():
     item = random.choice(item['items'])
     save_image(item['img_url'])
 
-    tags = [' #art', ' #arte', ' #modernart', ' #artemoderna',
-            ' #mamsp', ' #museu', ' #museum']
-
     msg = '{} - {}; {}.'.format(item['title'], item['artist'], item['year'])
-    msg = msg + random.choice(tags)
+    msg = msg + ' #acervomamsp'
     tweet = api.update_with_media('image.jpg', status=msg)
     api.update_status(status=item['url'], in_reply_to_status_id=tweet.id_str)
 
